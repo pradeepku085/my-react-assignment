@@ -1,1 +1,70 @@
+.container {
+    width: calc(100% - 30px);
+    height: 100vh;
+    margin: 15px;
+    /* padding: 30px; */
+}
 
+.topBox {
+    width: 100%;
+    height: 33.33%;
+    background: aliceblue;
+    margin-bottom: 10px;
+}
+
+.yellow {
+    background: yellow;
+    display: inline-block;
+    width: calc(50% - 5px);
+    margin-right: 10px;
+    height: 100%;
+}
+
+.yellow:last-child {
+    margin-right: 0px;
+}
+
+.red {
+    background: red;
+    height: 100%;
+}
+
+.blue {
+    display: inline-block;
+    background: blue;
+    width: calc(33.33% - 7px);
+    margin-right: 10px;
+    height: 100%;
+}
+
+.blue:last-child {
+    margin-right: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    .blue:last-child {
+        display: none;
+    }
+
+    .blue {
+        display: block;
+        width: 100%;
+        margin: 0px;
+        margin-top: 10px;
+    }
+
+    .blue:first-child {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .yellow {
+        display: block;
+        width: 100%;
+        height: 48%;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+}
